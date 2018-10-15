@@ -1,0 +1,28 @@
+<div class="container tab1-color-background">
+    <h3 class="title-tab1">Hotel<strong> Mieres del Camín Apartamentos</strong>
+      <span class="stars-tab1" *ngFor="let star of stars">
+        <img [src]='star.path' alt="">
+      </span>
+    </h3>
+
+    <div class="row">
+        <div class="col" *ngFor="let regimen of regimenes; let i = index" >
+            <div class="card">
+              <div class="card-block title-tab1">
+                  <h6 class="card-title"><strong>{{ regimen.title }}</strong></h6>
+              </div>
+              <hr>
+              <div class="card-body">
+                <ul *ngFor="let option of regimen.options">
+                  <li class="card-text"><small class="text-muted">{{ option }}</small></li>
+                </ul>
+                <button (click)="verRegimen(i)"
+                  type="button" class="btn btn-outline-primary btn-block">
+                  Elegir régimen
+                </button>
+              </div>
+            </div>
+        </div>
+     </div>
+</div>
+

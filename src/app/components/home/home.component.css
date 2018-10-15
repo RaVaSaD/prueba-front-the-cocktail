@@ -1,0 +1,32 @@
+.title-tab1 {
+  margin-top: 15px;
+  color: #0056b3;
+  text-align: center;
+}
+
+.stars-tab1 {
+  margin-left: 5px;
+}
+
+.tab1-color-background{
+  background-color: #F8F8F8
+}
+
+ul {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.card-body {
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+button.btn {
+  margin-top: auto;
+}
+
+.card {
+ height: 550px;
+}
