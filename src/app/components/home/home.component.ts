@@ -69,8 +69,8 @@ export class HomeComponent implements OnInit {
     ];
   }
 
-  public verRegimen(_index: number) {
-    console.log('column: ', _index + 1);
+  public verRegimen(_regimen) {
+    console.log('column: ', _regimen );
   }
 
 }
