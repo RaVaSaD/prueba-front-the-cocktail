@@ -14,7 +14,7 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [
-    DescriptionComponent
+    DescriptionComponent,
   ]
 })
 export class DescriptionModule { }

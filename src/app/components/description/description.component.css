@@ -1,0 +1,35 @@
+.tab2{
+  margin-top: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.tab2-margin-p{
+  margin: 10px;
+}
+
+.tab2-etiqueta {
+  font-size: medium;
+  background-color:red;
+  color: white;
+}
+
+.tab2-btn {
+  margin: 10px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.marpad{
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.card{
+  margin: 10px;
+}
+
+.tab2-c2-title{
+  color: #033970;
+}

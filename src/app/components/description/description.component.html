@@ -1,6 +1,39 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3">Descripción Hotel - Tab 2</h1>
+<div class="tab2" *ngFor='let description of descriptions; let i = index'>
+  <div class="container row marpad justify-content-end">
+      <div class="col-3 tab2-etiqueta">
+        EXCLUSIVO HOTELES.COM
+      </div>
+  </div>
+  <p class="tab2-margin-p">
+    <span *ngIf="rotateArrow[i]"><img src="assets/img/angle-down-blue.svg" alt=""></span>
+    <span *ngIf="!rotateArrow[i]"><img src="assets/img/angle-up-blue.svg" alt=""></span>
+    <a class="tab2-btn" data-toggle="collapse" href="#multiCollapseTab2-{{i}}" role="button" aria-expanded="false" aria-controls="multiCollapseTab2" (click)='rotate(i)'>{{description.title}}</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseTab2-{{i}}">
+        <div class="card card-body" *ngFor='let item of description.items; let j = index'>
+            <div class="row">
+              <div class="col-3">
+                <img class="float-left img-fluid" [src]="item.image" width="200" alt="">
+              </div>
+              <div class="col-9">
+                <h5 class="tab2-c2-title">{{item.subtitle}}</h5>
+                <p>{{item.text}}</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-4">
+                  <a class="tab2-btn" data-toggle="collapse" href="#multiCollapseSubTab2-{{i}}-{{j}}" role="button" aria-expanded="false" aria-controls="multiCollapseSubTab2"><strong>Más información y condiciones</strong></a>
+              </div>
+            </div>
+            <div>
+              <div class="collapse multi-collapse" id="multiCollapseSubTab2-{{i}}-{{j}}">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
