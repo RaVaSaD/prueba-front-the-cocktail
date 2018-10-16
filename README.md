@@ -32,6 +32,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 You have 2 routes, home and description.
 
-In the first tab, you can see the different reservations of the Hotel. If you click on 'choose modal', you will see the option chosen in a modal.
+In the `first tab`, you can see the different reservations of the Hotel. If you click on 'choose modal', you will see the option chosen in a modal.
 
-In the second tab, you can see the description of the Hotel.
+In the `second tab`, you can see the description of the Hotel.
