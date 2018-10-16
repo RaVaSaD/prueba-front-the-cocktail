@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'home',
     loadChildren: './components/home/home.module#HomeModule'
   },
-  { path: 'descripcion',
-    loadChildren: './components/descripcion/descripcion.module#DescripcionModule'
+  { path: 'description',
+    loadChildren: './components/description/description.module#DescriptionModule'
   }
 ];
 

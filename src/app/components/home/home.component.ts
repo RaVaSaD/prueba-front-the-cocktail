@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
   public stars: any[];
   public regimenes: ICardConfig[];
+  public regimenModal: ICardConfig;
 
   constructor() { }
 
@@ -70,7 +71,7 @@ export class HomeComponent implements OnInit {
   }
 
   public verRegimen(_regimen) {
-    console.log('column: ', _regimen );
+    this.regimenModal = _regimen;
   }
 
 }
